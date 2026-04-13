@@ -13,6 +13,8 @@ investor relations pages.
 
 **Job posting:** `docs/job-posting.pdf` — Jr. Data Analyst, Axos Bank, San Diego, CA
 
+> **Project Status:** This file documents the full intended project structure. Components marked as "planned" will be created in later milestones.
+
 ---
 
 ## Tech Stack
@@ -36,14 +38,14 @@ investor relations pages.
 - **Base URL:** `https://banks.data.fdic.gov/api/`
 - **Key endpoint:** `/financials` — quarterly call report data per institution
 - **Auth:** None required (public API)
-- **Script:** `scripts/extract_fdic.py`
+- **Script (planned):** `scripts/extract_fdic.py`
 - **Loads to:** Snowflake `RAW.FDIC_FINANCIALS`
 
 ### Source 2 — Web Scrape: Competitive Intelligence
 - **Targets:** Axos IR, Ally Bank, SoFi, Discover Bank, Marcus by Goldman Sachs
 - **Raw files:** `knowledge/raw/`
 - **Tool:** Firecrawl or requests + BeautifulSoup
-- **Script:** `scripts/scrape_competitors.py`
+- **Script (planned):** `scripts/scrape_competitors.py`
 
 ---
 
@@ -55,7 +57,7 @@ investor relations pages.
 ├── dbt/                     # dbt project (staging + mart models)
 ├── docs/                    # Proposal, job posting, specs, plans
 │   ├── job-posting.pdf
-│   ├── proposal.md
+│   ├── proposal.md          # (planned — Task 4)
 │   └── superpowers/
 │       ├── specs/
 │       └── plans/
@@ -67,7 +69,7 @@ investor relations pages.
 ├── .env                     # Local credentials (never committed)
 ├── .gitignore
 ├── CLAUDE.md                # This file
-└── README.md
+└── README.md                # (planned — Milestone 02)
 ```
 
 ---
@@ -98,6 +100,7 @@ SNOWFLAKE_PASSWORD=
 SNOWFLAKE_DATABASE=
 SNOWFLAKE_WAREHOUSE=
 SNOWFLAKE_ROLE=
+SNOWFLAKE_SCHEMA=
 ```
 
 ---
@@ -116,6 +119,8 @@ To ask questions about the knowledge base during a Claude Code session:
 3. Claude Code will read `knowledge/wiki/` pages and `knowledge/raw/` sources to answer
 
 ### Wiki Pages
+
+> **Note:** Wiki pages below will be created during the knowledge base pipeline phase (Milestone 02). They do not yet exist.
 
 | File | Content |
 |---|---|
