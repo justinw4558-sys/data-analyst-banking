@@ -53,19 +53,19 @@ investor relations pages.
 
 ```
 .
-├── .github/workflows/       # GitHub Actions pipelines
-├── dbt/                     # dbt project (staging + mart models)
+├── .github/workflows/       # (planned) GitHub Actions pipelines
+├── dbt/                     # (planned) dbt project (staging + mart models)
 ├── docs/                    # Proposal, job posting, specs, plans
 │   ├── job-posting.pdf
 │   ├── proposal.md          # (planned — Task 4)
 │   └── superpowers/
 │       ├── specs/
 │       └── plans/
-├── knowledge/
-│   ├── raw/                 # Scraped source files (15+ files, 3+ sources)
-│   ├── wiki/                # Claude Code-generated wiki pages
-│   └── index.md             # Index of all wiki pages
-├── scripts/                 # Python extraction and scrape scripts
+├── knowledge/               # (planned)
+│   ├── raw/                 # (planned) Scraped source files (15+ files, 3+ sources)
+│   ├── wiki/                # (planned) Claude Code-generated wiki pages
+│   └── index.md             # (planned) Index of all wiki pages
+├── scripts/                 # (planned) Python extraction and scrape scripts
 ├── .env                     # Local credentials (never committed)
 ├── .gitignore
 ├── CLAUDE.md                # This file
