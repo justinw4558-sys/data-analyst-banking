@@ -18,7 +18,7 @@
 
 ## Project: U.S. Bank Performance & Competitive Intelligence Pipeline
 
-**GitHub Repo:** [SQL-Project](https://github.com/justinw4558-sys/SQL-Project)
+**GitHub Repo:** [data-analyst-banking](https://github.com/justinw4558-sys/data-analyst-banking)
 
 ---
 
