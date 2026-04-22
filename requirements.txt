@@ -1,0 +1,4 @@
+snowflake-connector-python
+firecrawl-py
+python-dotenv
+requests
