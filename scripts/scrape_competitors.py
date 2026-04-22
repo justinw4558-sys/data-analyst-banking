@@ -78,6 +78,55 @@ TARGETS = [
         "label": "Goldman Sachs - Investor Relations",
         "url": "https://www.goldmansachs.com/investor-relations/",
     },
+    # --- Axos additional sources ---
+    {
+        "company": "axos_bank",
+        "label": "Axos Bank - Newsroom",
+        "url": "https://www.axosbank.com/About-Us/Newsroom",
+    },
+    {
+        "company": "axos_bank",
+        "label": "Axos Bank - Business Banking",
+        "url": "https://www.axosbank.com/Business",
+    },
+    # --- Industry / regulatory sources ---
+    {
+        "company": "fdic",
+        "label": "FDIC - Quarterly Banking Profile Q4 2024",
+        "url": "https://www.fdic.gov/analysis/quarterly-banking-profile/",
+    },
+    {
+        "company": "fdic",
+        "label": "FDIC - Digital Banking Overview",
+        "url": "https://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/",
+    },
+    {
+        "company": "federal_reserve",
+        "label": "Federal Reserve - Consumer & Community Banking",
+        "url": "https://www.federalreserve.gov/releases/g19/current/",
+    },
+    # --- Earnings / financial disclosures ---
+    {
+        "company": "sofi",
+        "label": "SoFi - Financial Results & Press Releases",
+        "url": "https://investors.sofi.com/press-releases",
+    },
+    {
+        "company": "lendingclub_bank",
+        "label": "LendingClub - Press Releases",
+        "url": "https://ir.lendingclub.com/press-releases",
+    },
+    {
+        "company": "ally_bank",
+        "label": "Ally Bank - Corporate Overview",
+        "url": "https://www.ally.com/about/our-company/",
+    },
+    # --- Industry research ---
+    {
+        "company": "industry",
+        "label": "American Bankers Association - Digital Banking",
+        "url": "https://www.aba.com/banking-topics/technology/digital-banking",
+    },
 ]
 
 # Snowflake target

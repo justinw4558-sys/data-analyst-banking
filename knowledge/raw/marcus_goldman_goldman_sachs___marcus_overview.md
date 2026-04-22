@@ -1,7 +1,7 @@
 # Goldman Sachs - Marcus Overview
 
 Source: https://www.goldmansachs.com/what-we-do/consumer-and-wealth-management/marcus/
-Scraped: 2026-04-22T01:36:34.377150Z
+Scraped: 2026-04-22T02:38:08.130695Z
 
 ---
 

@@ -1,7 +1,7 @@
 # LendingClub - Investor Relations
 
 Source: https://ir.lendingclub.com/overview
-Scraped: 2026-04-22T01:36:26.852462Z
+Scraped: 2026-04-22T02:38:00.605044Z
 
 ---
 

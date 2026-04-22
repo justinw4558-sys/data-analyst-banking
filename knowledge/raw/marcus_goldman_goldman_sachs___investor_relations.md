@@ -1,7 +1,7 @@
 # Goldman Sachs - Investor Relations
 
 Source: https://www.goldmansachs.com/investor-relations/
-Scraped: 2026-04-22T01:36:38.175624Z
+Scraped: 2026-04-22T02:38:11.918155Z
 
 ---
 

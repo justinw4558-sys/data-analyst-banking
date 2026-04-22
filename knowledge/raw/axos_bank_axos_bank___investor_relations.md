@@ -1,7 +1,7 @@
 # Axos Bank - Investor Relations
 
 Source: https://investors.axosfinancial.com/overview
-Scraped: 2026-04-22T01:36:04.434280Z
+Scraped: 2026-04-22T02:37:38.147980Z
 
 ---
 

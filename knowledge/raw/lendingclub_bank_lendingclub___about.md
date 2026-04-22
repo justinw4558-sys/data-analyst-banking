@@ -1,7 +1,7 @@
 # LendingClub - About
 
 Source: https://www.lendingclub.com/about
-Scraped: 2026-04-22T01:36:30.595816Z
+Scraped: 2026-04-22T02:38:04.388705Z
 
 ---
 

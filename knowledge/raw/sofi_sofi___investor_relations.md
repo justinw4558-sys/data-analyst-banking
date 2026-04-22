@@ -1,7 +1,7 @@
 # SoFi - Investor Relations
 
 Source: https://investors.sofi.com/overview
-Scraped: 2026-04-22T01:36:19.438425Z
+Scraped: 2026-04-22T02:37:53.033043Z
 
 ---
 

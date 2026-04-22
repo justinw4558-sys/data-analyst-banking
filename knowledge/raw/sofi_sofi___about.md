@@ -1,7 +1,7 @@
 # SoFi - About
 
 Source: https://www.sofi.com/our-story/
-Scraped: 2026-04-22T01:36:23.224601Z
+Scraped: 2026-04-22T02:37:56.901279Z
 
 ---
 
