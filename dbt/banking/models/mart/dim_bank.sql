@@ -34,7 +34,7 @@ flagged as (
             when 35546 then 'Axos Bank'
             when 57803 then 'Ally Bank'
             when 58177 then 'SoFi Bank'
-            when 60971 then 'LendingClub Bank'
+            when 32551 then 'LendingClub Bank'
             else null
         end                     as peer_group_name
     from banks
