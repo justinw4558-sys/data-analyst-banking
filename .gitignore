@@ -212,3 +212,6 @@ __marimo__/
 # Project requirements
 project-requirements-README.md
 
+# Streamlit secrets
+dashboard/.streamlit/secrets.toml
+
