@@ -25,9 +25,8 @@ st.set_page_config(
 )
 
 # ── connection ─────────────────────────────────────────────────────────────────
-@st.cache_resource(show_spinner=False)
-def get_connection():
-    """Return a Snowflake connection, reading creds from st.secrets."""
+def _new_connection():
+    """Open a fresh Snowflake connection each call (no caching — warehouse may suspend)."""
     return snowflake.connector.connect(
         account=st.secrets["snowflake"]["account"],
         user=st.secrets["snowflake"]["user"],
@@ -42,7 +41,7 @@ def get_connection():
 @st.cache_data(ttl=3600, show_spinner="Loading data from Snowflake…")
 def load_data():
     """Pull all mart data into DataFrames (cached 1 hour)."""
-    conn = get_connection()
+    conn = _new_connection()
     cur = conn.cursor()
 
     fact_sql = """
@@ -90,6 +89,7 @@ def load_data():
         fact[c] = pd.to_numeric(fact[c], errors="coerce")
 
     cur.close()
+    conn.close()
     return fact
 
 
