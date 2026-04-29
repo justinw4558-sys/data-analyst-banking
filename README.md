@@ -42,7 +42,59 @@ flowchart TB
 
 ## ERD (Star Schema)
 
-*To be added after dbt models are complete.*
+```mermaid
+erDiagram
+    DIM_BANK {
+        int     bank_id             PK
+        string  bank_name
+        string  latest_report_date
+        int     peak_assets
+        int     first_report_year
+        int     last_report_year
+        int     quarters_reported
+        boolean is_axos
+        string  peer_group_name
+    }
+
+    DIM_DATE {
+        string  date_key            PK
+        int     report_year
+        int     report_quarter
+        int     report_month
+        string  year_quarter
+        string  quarter_label
+        boolean is_current_year
+    }
+
+    FCT_BANK_FINANCIALS {
+        string  fact_id             PK
+        int     bank_id             FK
+        string  date_key            FK
+        string  bank_name
+        string  year_quarter
+        int     report_year
+        int     report_quarter
+        boolean is_axos
+        string  peer_group_name
+        int     total_assets
+        int     total_deposits
+        int     net_loans
+        int     total_equity
+        int     total_securities
+        int     net_income
+        int     interest_income
+        int     noninterest_income
+        int     noninterest_expense
+        int     total_revenue
+        float   net_interest_margin
+        float   return_on_assets
+        float   return_on_equity
+        float   loans_to_deposits_ratio
+    }
+
+    DIM_BANK ||--o{ FCT_BANK_FINANCIALS : "bank_id"
+    DIM_DATE ||--o{ FCT_BANK_FINANCIALS : "date_key"
+```
 
 ## Dashboard Preview
 
