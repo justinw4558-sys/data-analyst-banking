@@ -1,0 +1,67 @@
+version: 2
+
+models:
+  - name: dim_bank
+    description: "Bank dimension table. One row per FDIC-insured institution."
+    columns:
+      - name: bank_id
+        description: "FDIC certificate number — primary key"
+        data_tests:
+          - unique
+          - not_null
+      - name: bank_name
+        description: "Institution name"
+        data_tests:
+          - not_null
+      - name: is_axos
+        description: "True if this is Axos Bank"
+      - name: peer_group_name
+        description: "Named peer group label (Axos, Ally, SoFi, LendingClub) — null for all others"
+
+  - name: dim_date
+    description: "Date dimension. One row per unique report date (quarter-end)."
+    columns:
+      - name: date_key
+        description: "Report date in YYYYMMDD format — primary key"
+        data_tests:
+          - unique
+          - not_null
+      - name: year_quarter
+        description: "Human-readable year-quarter label e.g. 2024-Q4"
+        data_tests:
+          - not_null
+
+  - name: fct_bank_financials
+    description: "Fact table. One row per bank per quarter. Core table for all dashboard analysis."
+    columns:
+      - name: fact_id
+        description: "Surrogate key — unique per bank + quarter"
+        data_tests:
+          - unique
+          - not_null
+      - name: bank_id
+        description: "Foreign key to dim_bank"
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_bank')
+                field: bank_id
+      - name: date_key
+        description: "Foreign key to dim_date"
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: date_key
+      - name: total_assets
+        description: "Total assets in thousands of dollars"
+        data_tests:
+          - not_null
+      - name: return_on_assets
+        description: "Return on assets (%)"
+      - name: return_on_equity
+        description: "Return on equity (%)"
+      - name: net_interest_margin
+        description: "Net interest margin (%)"

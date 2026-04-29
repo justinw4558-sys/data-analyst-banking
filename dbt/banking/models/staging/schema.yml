@@ -1,0 +1,45 @@
+version: 2
+
+sources:
+  - name: raw
+    database: data_analyst_banking
+    schema: raw
+    tables:
+      - name: fdic_financials
+        description: "Raw FDIC BankFind quarterly financial data for all FDIC-insured institutions"
+        columns:
+          - name: cert
+            description: "FDIC institution certificate number (unique bank ID)"
+          - name: repdte
+            description: "Report date in YYYYMMDD format"
+          - name: asset
+            description: "Total assets in thousands of dollars"
+
+models:
+  - name: stg_fdic_financials
+    description: "Cleaned and renamed FDIC quarterly financials. One row per bank per quarter."
+    columns:
+      - name: bank_id
+        description: "FDIC certificate number — unique identifier for each institution"
+        data_tests:
+          - not_null
+      - name: report_date_str
+        description: "Report date as YYYYMMDD string"
+        data_tests:
+          - not_null
+      - name: bank_name
+        description: "Institution name"
+        data_tests:
+          - not_null
+      - name: total_assets
+        description: "Total assets in thousands of dollars"
+        data_tests:
+          - not_null
+      - name: net_income
+        description: "Net income in thousands of dollars"
+      - name: return_on_assets
+        description: "Return on assets as a percentage"
+      - name: return_on_equity
+        description: "Return on equity as a percentage"
+      - name: net_interest_margin
+        description: "Net interest margin as a percentage"
