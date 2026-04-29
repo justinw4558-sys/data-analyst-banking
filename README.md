@@ -46,7 +46,12 @@ flowchart TB
 
 ## Dashboard Preview
 
-*To be added after Streamlit dashboard is deployed.*
+**Live:** https://data-analyst-banking-5yrns7ojcv2cyq5xhyqfru.streamlit.app/
+
+Three-tab interactive dashboard:
+- **Axos Overview** — balance sheet growth, ROA/NIM trends, quarterly net income
+- **Peer Benchmarking** — Axos vs. Ally, SoFi, LendingClub across any metric
+- **Custom Explorer** — pick any bank from 5,000+ FDIC institutions + FDIC industry median overlay
 
 ## Key Insights
 
@@ -60,7 +65,7 @@ flowchart TB
 
 ## Live Dashboard
 
-**URL:** *To be added after deployment.*
+**URL:** https://data-analyst-banking-5yrns7ojcv2cyq5xhyqfru.streamlit.app/
 
 ## Knowledge Base
 
