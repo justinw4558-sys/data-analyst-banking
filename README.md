@@ -107,13 +107,31 @@ Three-tab interactive dashboard:
 
 ## Key Insights
 
-*To be added after dashboard is complete.*
+All figures from FDIC quarterly call reports (2020 Q1 – 2025 Q4).
 
-**Descriptive (what happened?):** TBD
+**Descriptive — What happened?**
 
-**Diagnostic (why did it happen?):** TBD
+Axos Bank grew total assets from $11.5B (Q1 2020) to $27.2B (Q4 2025), a **136% increase in 5 years**, while maintaining a return on assets of **1.77%** — well above the FDIC industry median of 1.10%. Net interest margin held in a tight 4.4–4.9% band throughout, benefiting from Axos's branchless cost structure as rates rose. Annual net income reached **$436M in Q4 2025** (cumulative), up from $226M at end of 2020.
 
-**Recommendation:** TBD → TBD
+**Diagnostic — Why did it happen?**
+
+Peer benchmarking reveals Axos's efficiency edge:
+
+| Bank | Total Assets | ROA | ROE | NIM |
+|---|---|---|---|---|
+| Axos Bank | $27.2B | **1.77%** | 17.5% | 4.91% |
+| SoFi Bank | $29.7B | 2.90% | 29.6% | 5.69% |
+| LendingClub Bank | $11.5B | 1.22% | 10.8% | 6.14% |
+| Ally Bank | $184.6B | 0.91% | 11.3% | 4.03% |
+| FDIC Industry Median | — | 1.10% | — | 3.72% |
+
+*Q4 2025 snapshot*
+
+Axos consistently outperforms the FDIC median on both ROA and NIM. Ally Bank, despite 7× the assets, earns a lower ROA — a sign that scale alone doesn't drive profitability in digital banking. SoFi leads on ROA and ROE, reflecting rapid loan growth off a smaller base post-bank-charter (2022).
+
+**Recommendation**
+
+Axos's NIM advantage (4.9% vs. 3.7% industry median) is structural — no branch overhead, disciplined deposit pricing. To sustain it as rates normalize, Axos should prioritize **fee-based revenue diversification** (Axos Invest, Axos Clearing) to reduce reliance on rate-sensitive NIM, mirroring SoFi's super-app strategy while staying within Axos's focused product lanes.
 
 ## Live Dashboard
 
